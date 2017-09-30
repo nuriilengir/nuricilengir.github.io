@@ -1,11 +1,3 @@
-- image: ubuntu-17-04-zesty-zapus-yayinlandi.jpg
-  title: "Ubuntu 17.04 Zesty Zapus Yayınlandı"
-  url: /ubuntu-17-04-zesty-zapus-yayinlandi
-
-- image: 1.jpeg
-  title: "MongoDB 3.2 yayınlandı"
-  url: /mongodb
-
-- image: heartbleed.jpg
-  title: "İnternet dünyasının %70'i tehlike altında"
-  url: /heartbleed
+- image: Linus-Torvalds.jpg
+  title: "Linus Torvalds: Linux’ın Arkasındaki Beyin Ted - The Mind Behind Linux-"
+  url: /linus-torvalds-linuxin-arkasindaki-beyin-tedx-the-brain-behind-linux-
