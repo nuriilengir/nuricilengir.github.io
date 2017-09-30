@@ -1,10 +1,10 @@
 <input type="checkbox" name="menuDugme" id="menuDugme1">
 <header>
     <nav class="ustMenu">
-        <a href="https://nuricilengir.me/">Home Page</a>
+        <a href="http://nuricilengir.me/">Home Page</a>
         <a href="https://github.com/nuriilengir">GitHub</a>
         <a class="aktif" href="/">Nuri Çilengir</a>
-	<a href="https://nuricilengir.me/about">About/Contact</a>
+	<a href="http://nuricilengir.me/about">About/Contact</a>
         <a href="https://www.facebook.com/profile.php?id=100009844125117">Facebook</a>
         <a href="https://twitter.com/_cilengirnuri">Twitter</a>
         <a href="https://stackoverflow.com/users/8382507/aimlesslight?tab=profile">Stack Overflow</a>
