@@ -1,14 +1,15 @@
 <div id="disqus_thread"></div>
 <script>
-    var disqus_config = function () {
-        this.page.identifier = '{{ page.url }}';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
 
-        s.src = '//{{ include.config.disqus_id }}.disqus.com/embed.js';
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://nuricilengir-me.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
