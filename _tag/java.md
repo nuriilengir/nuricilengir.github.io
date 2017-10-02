@@ -1,3 +1,3 @@
 ---
-title: Java
+title: 'Java '
 ---
