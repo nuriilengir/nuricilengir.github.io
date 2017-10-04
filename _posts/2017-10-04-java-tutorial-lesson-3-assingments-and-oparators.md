@@ -1,7 +1,7 @@
 ---
 title: 'Java Tutorial - Lesson 3  : Assingments and Oparators'
 summary: Javada Atama ve Operatörler
-image: ''
+image: java.png
 permalink: java-tutorial-lesson-3-assingments-and-oparators
 date: '2017-10-02 20:49'
 categories: k2
@@ -342,15 +342,14 @@ public class Burclar {
 }
 ```
 Hemen açıklayalım. 
-ilk koşulumuz `(ay == 1 && (ve) gun <=20) ||(ya da) (ay == 12 &&(ve) gun>=21) `
+ilk koşulumuz `(ay == 1 && (ve) gun <=20) II (ya da) (ay == 12 &&(ve) gun>=21) `
 eğer kullanıcı ay değerini 1 girerse ve gün değeri 20den küçük eşitse burcu oğlaktır ya da ay değeri 12 ise ve girdiği gun değeri 21'e büyük veya eşitse burç oğlaktır. Yazdığımız çoklu koşul ifadelerini  bu şekilde açıklayabiliriz.
 
 
-> NOT : Mantıksal Operatörlerden &&(VE), ||(YA DA) tekli karakterli de kullanılabilir. Örneğin `ay == 1 & gun<=20` şeklinde de yazabilir arasındaki fark eğer çift karakterle yazarsak (&&, || ) koşul soldan işleme başlar ve ifade en sona gelmeden kesin bir sonuca ulaşılırsa ifadenin geri kalan kısmı görmezden gelinir ve program akışına devam eder.Eğer biz bu operatörleri tek karakterle yazsaydık (&,|) koşul kesin bir ifade ile sağlansa bile operatörün her iki yanındaki işlemler yapılmak zorunda olacaktı ve bu işlemler yapıldıktan sonra program akışına devam etmiş olacaktı.
+> NOT : Mantıksal Operatörlerden &&(VE), II (YA DA) tekli karakterli de kullanılabilir. Örneğin `ay == 1 & gun<=20` şeklinde de yazabilir arasındaki fark eğer çift karakterle yazarsak (&&, II ) koşul soldan işleme başlar ve ifade en sona gelmeden kesin bir sonuca ulaşılırsa ifadenin geri kalan kısmı görmezden gelinir ve program akışına devam eder.Eğer biz bu operatörleri tek karakterle yazsaydık (&,|) koşul kesin bir ifade ile sağlansa bile operatörün her iki yanındaki işlemler yapılmak zorunda olacaktı ve bu işlemler yapıldıktan sonra program akışına devam etmiş olacaktı.
 
 **Önümüzdeki ders Javada 
 Koşul ( İF, İF ELSE, İF ELSEİF ELSE, SWİTCH CASE) 
 Döngü(WHİLE,DO-WHİLE,FOR) 
 Dallandırma(BREAK,CONTINUE,RETURN) 
 ve İstisna(TRY-CATCH-FİNALLY, THROW) konularını göreceğiz...**
-
