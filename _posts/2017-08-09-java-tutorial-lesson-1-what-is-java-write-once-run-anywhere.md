@@ -3,11 +3,10 @@ title: 'Java Tutorial - Lesson 1 : What is Java?  Write Once, Run Anywhere'
 summary: 'Java Ders 1 : Java Nedir?'
 image: java.png
 permalink: java-tutorial-lesson-1-what-is-java-write-once-run-anywhere
-date: '2017-08-10 01:30'
+date: '2017-09-18 01:30'
 categories: k2
 tags:
   - Hello World
-  - Java
   - Programming
   - Tutorials
 author: Nuri Çilengir
