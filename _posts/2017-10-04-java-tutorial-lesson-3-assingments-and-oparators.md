@@ -37,11 +37,11 @@ degiskenBir = 35;
 degiskenIki = 45;
 degiskenBir = degiskenIki;
 ```
-Burada ki olayı sırasıyla açıklamak gerekirse;
-İlk önce degiskenBir ve degiskenIki adında iki adet integer veri tipinde değişken tanımladık.Daha sonra bu değikenlere 35 ve 45 değerlerini atadık. Peki 
+Buradaki olayı sırasıyla açıklamak gerekirse;
+İlk önce degiskenBir ve degiskenIki adında iki adet integer veri tipinde değişken tanımladık.Daha sonra bu değişkenlere 35 ve 45 değerlerini atadık. Peki 
 `degiskenBir = degiskenIki; ` ? burada ise değeri 45 olan değişkeni değeri 35 olan değişkene atadık yani artık degiskenBir'in yeni değeri 45 olmuş oldu.
 ### Nesneler Ve Atamalar
-[Geçtiğimiz derste ](http://nuricilengir.me/java-tutorial-lesson-2-everything-is-object) gördüğümüz Nesne kavramı için atama işlemi veri tiplerine uyguladığımız işlemden biraz daha meşakkatli denilebilir.Nesneleri yönetmek için referansları kullanırız. Eğer nesneler için atama işlemi gerçekleştirecek olursa nesnelerin değil nesnelere bağlı olan referansların gösterdiği değerlerde değişiklik olacağıdır.
+[Geçtiğimiz derste ](http://nuricilengir.me/java-tutorial-lesson-2-everything-is-object) gördüğümüz Nesne kavramı için atama işlemi veri tiplerine uyguladığımız işlemden biraz daha meşakkatli denilebilir.Nesneleri yönetmek için referanslarını kullanırız. Eğer nesneler için atama işlemi gerçekleştirecek olursak nesnelerin değil nesnelere bağlı olan referansların gösterdiği değerlerde değişiklik olacaktır.
 ```java
 class Sayi{
   int x;
@@ -61,7 +61,7 @@ public class NesneAtamaları{
 }
 ```
 Bu uygulamada ne yaptık  ? 
-Önce 2 tane Sayi adında nesneler oluşturduk. Bu nesneler Sayi türündeki bağlıdırlar(n1 ve n2 ).  Bu referanslar 2 ayrı Sayi nesnesini belirtirler. Daha sonra n1 referansının belirttiği Sayi nesnesine 23 değeri atandı. Aynı işlemi n2'ye uyguladık. Ve sonra` System.out.println`'le bunları görmek için ekrana yazdırdık.
+Önce 2 tane Sayi adında nesne oluşturduk. Bu nesneler Sayi türündeki (n1 ve n2 ) bağlıdırlar.  Bu referanslar 2 ayrı Sayi nesnesini belirtirler. n1 referansının belirttiği Sayi nesnesine 23 değeri atandı. Aynı işlemi n2'ye uyguladık. Ve sonra` System.out.println`'le bunları görmek için ekrana yazdırdık.
 Çıktımız ise şu şekilde oldu :
 
 >1 :  n1 .x  =  23 |  n2.x = n2.x = 15
@@ -71,7 +71,8 @@ Bu uygulamada ne yaptık  ?
 Burada önemli olan 11. satırda  `n1 = n2;`'de gerçekleşen olay bunu anlarsak nesneleri atama konusunu anlamış oluruz.
 n1 artık n2'nin işaret ettiği nesneyi gösterir.
 
-![]({{ site.assetsDir }}{{ page.permalink }}/javatutorial.png)
+![N]({{ site.assetsDir }}{{ page.permalink }}/javatutorial.png)
+
 n1'in gösterdiği Sayi nesnesine ne olacak artık kullanılmıyor ?  burada javanın **Garbage Collector** devreye girecektir.  **Garbage Collector** konusunu daha sonra göreceğiz...
 ## Javada Operatörler
 Operatörler programlama dilinde en temel işelemleri gerçekleştirmemizi sağlayan simgesel yapılardır. Java programlama dilinde oldukça fazla ve kullanışlı operatör alanına sahiptir.
@@ -80,8 +81,8 @@ Operatörler programlama dilinde en temel işelemleri gerçekleştirmemizi sağl
 3. Mantıksal Operatörler
 4. Bitwise Operatörler 
 
-Operatörler genelde işlem yaptıkları değişken ya da sabit sayısına göre kategorilendirirler tekli operatör (unary operator)  ya da ikili operatör (binary operator) ve  üç adet değişken yada sabite ihtiyaç duyan operatörlere üçlü operatör denir
-**Unary Operator : **
+Operatörler genelde işlem yaptıkları değişken ya da sabit sayısına göre kategorize tekli operatör (unary operator)  ya da ikili operatör (binary operator) ve  üç adet değişken ya da sabite ihtiyaç duyan operatörlere üçlü operatör denir
+**Unary Operator :**
 ```
 -> operatör değişken //prefix (ön ek)
 ya da
@@ -148,7 +149,9 @@ System.out.println("h  : " + h);
 >  x * y:45
 >  y % x:4
 
-#### Not : + ve - operatörleri karakter tipindeki verileri sayısal tipe dönüştüme görevi de üstlenirler.
+*  **Not** : + ve - operatörleri karakter tipindeki verileri sayısal tipe dönüştürme görevi de üstlenirler.
+
+
 ```java
 char ch = 'n';
 int x = +ch;
@@ -183,7 +186,7 @@ System.out.println("y : "+ y +"h : "+ h + "g :" + g);
 
 Ufak bir not eğer eğer kesirli bir değere casting yaparsak dönüş yuvarlama işlemine göre gerçekleşir.
 #### Bir arttırma ve Bir Azaltma 
-Bazen program yaparken elimizdeki değikenlerin programın akışı sırasında belirlediğimiz değere kadar artmasını veya azalmasını isteyebiliriz. (yani bir sayaç mantığı ile çalışması)Arttırma ve Azaltma operatörleri adından da anladığımız gibi arttırmak ve azaltmak işlemlerini yaptığımız kısaltılmış yazım şekilleridir. Bu operatörler ön ve arka ek olarak (Ön ve arka ekleri biraz yukarıda göstermiştik) kullanılabilirler. Fakat buradaki  önemli kısım bu eklerin neye göre ön ya da arka olarak kullanıldığı yahut ön veya arka ek olarak kullanırsak ne olacağıdır.
+Bazen program yazarken elimizdeki değişkenlerin programın akışı sırasında belirlediğimiz değere kadar artmasını veya azalmasını isteyebiliriz. (yani bir sayaç mantığı ile çalışması)Arttırma ve Azaltma operatörleri adından da anladığımız gibi arttırmak ve azaltmak işlemlerini yaptığımız operatör biçimindeki yazım şekilleridir. Bu operatörler ön ve arka ek olarak kullanılabilirler. Fakat buradaki  önemli kısım bu eklerin neye göre ön ya da arka olarak kullanıldığı yahut ön veya arka ek olarak kullanırsak ne olacağıdır.
 
 
  No | Operatör | Kullanımı 
@@ -235,7 +238,7 @@ En son satırda ise değişkenin son durumu görmek için tekrar ekrana yazdırd
 
 > Değişkenin değeri : 3
 
-Burada sadece arttırma operatörlerini kullandık ama aynı işlemler azlatma operatörleri içinde geçerli olacaktır. Anlamamız gereken nokta değişkenlerin bu operatörlerle değerlerinin nasıl arttığıdır veya azaldığıdır.
+Burada sadece arttırma operatörlerini kullandık ama aynı işlemler azlatma operatörleri için de geçerli olacaktır. Anlamamız gereken nokta değişkenlerin bu operatörlerin durumuna göre (prefix yada postfix olamalarına göre) değerlerinin nasıl arttığıdır veya azaldığıdır.
 ### İlişkisel Operatörler
 
 İlişkisel operatörler matematikte yaptığımız sorgulamaların java yazılım dilindeki gösterimidir. Bunlar iki değişkenin birbirlerine karşı olan durumlarını sorgulamamızı sağlarlar ve java dilinde kullanım şekilleri aşağıdaki tabloda yer almaktadır.
@@ -282,7 +285,7 @@ Public class IliskiselDeneme {
   }
 }
 ```
-Yukarıda ki kodu açıklamak gerekirse, ilk önce Scanner sınıfını tanımladık daha sonra ekrana kullanıcıdan bir değer girmesini talep ettik.`input.nextInt()`'ile kullanıcıdan girilen değerin tam sayı olması gerektiğini javaya bildirdik. Daha sonra kullanıcının girdiği değeri integer tipinde sayi adlı değişkene atadık ve İF(KOŞUL) bloğunu açtık burada if koşuluna girilen değerin modunu aldırdık ve işlemin sonucu 0'a eşitse ekrana çift yazdırmasını istedik ELSE bloğunda(yani belirlemiş olduğumuz koşul sağlanmazsa else içinde yaptığımız işlerin gerçekleşmesini istedik)  girilen değerin modunun 1 olmaması durumunda ekrana tek sayı yazmasını istedik.Mesela kullanıcı 658 değerini girdiğini farz edelim çıktı şu şekilde olacaktır.
+Yukarıda ki kodu açıklamak gerekirse, ilk önce Scanner sınıfını tanımladık daha sonra ekrana kullanıcıdan bir değer girmesini talep ettik.`input.nextInt()`'ile kullanıcıdan girilen değerin tam sayı olması gerektiğini javaya bildirdik. Daha sonra kullanıcının girdiği değeri integer tipinde sayi adlı değişkene atadık ve İF(KOŞUL) bloğunu açtık burada if koşuluna girilen değerin modunu aldırdık ve işlemin sonucu 0'a eşitse ekrana çift yazdırmasını istedik ELSE bloğunda(yani belirlemiş olduğumuz koşul sağlanmazsa else içinde yaptığımız işlerin gerçekleşmesini istedik)  girilen değerin modunun 1 olması durumunda ekrana tek sayı yazmasını istedik.Mesela kullanıcı 658 değerini girdiğini farz edelim çıktı şu şekilde olacaktır.
 > 658 çift bir sayıdır.
 
 ### Mantıksal Operatörler
