@@ -409,7 +409,7 @@ Yukarıda anlattığımız şey burada da geçerlidir. Ve çıktımız şu şeki
 Yine for ile ilgili son 1 örnek yapalım ve artık olayı bitirelim..
 
 
-```
+```java
 public void Dosya_adı(){
 	
 	for(int i=50;i<=250;i+=50){
@@ -470,7 +470,7 @@ break deyiminin 2 farklı kullanımı mevcuttur. Etiketli ve etiketsiz olmak üz
 Örnel bir uygulama yapalım ve uygulamamızda for içinde  bir durumda döngü içinden çıkalım.
 
 
-```
+```java
 		int x;
 		for ( x = 0 ; x<100 ; x++ ) {
 			if (x==9) {
