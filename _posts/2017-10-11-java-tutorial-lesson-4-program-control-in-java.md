@@ -6,31 +6,32 @@ permalink: java-tutorial-lesson-4-program-control-in-java
 date: '2017-10-09 16:53'
 categories: k2
 tags:
-  - tags
-  - continue
-  - switch case
-  - switch
   - break
-  - return
+  - continue
   - do-while
-  - while
-  - for
-  - if else
   - else
-  - İf
+  - for
   - Hello Friend
+  - if else
+  - İf
   - Java Object Oriented Programming
   - Java OOP
   - 'Java '
   - Linux
   - Open Source
   - Programming
+  - return
+  - switch case
+  - switch
+  - tags
   - Tutorials
+  - while
 author: Nuri Çilengir
 ---
 ## Javada Program Denetimi
-Hayatta sorgulamadığımız bir düşünce, var olsa dahi bize ait olabilir mi ? Şimdi ne alaka hayat, sorgulama, programlama vs.  Hemen izah edeyim bir program yazmak için programlama dillerini kullanırız. Programlama dilleri bizim anlayabileceğimiz insan diline daha yakın sadece içerisinde kurallar barındıran bir araç. Peki bilgisayarlar bizi ne şekilde anlıyorlar  ? Biz ekrana "HELLO WORLD !!" yazdırmak istediğimizde aslında bilgisayarın daha da genel manada makinelerin anlayabileceği dil bu mudur ? Bu konuya  [ilk dersimizde](http://nuricilengir.me/java-tutorial-lesson-1-what-is-java-write-once-run-anywhere) değinmiştik şimdi yeniden bir değerlendirelim. Biz yazdığımız programı çalıştırmak istediğimizde javada bu program ortak bir ara dile çevirilir (Javanın bir kere yaz heryerde çalıştır felsefesi.) Bu ortak dil yazdığımız programlama dilinden uzak makinanın anlayabileceği dile yakındır. Bilgisayarlar peki bu ortak dili nasıl sorgularlar ? Gelmek istediğim nokta bir bilgisayar ya da makinenin aslında programlama denetimi yaparkenki  mantıkla neredeyse eşdeğer bir şekilde çalıştığıdır. Basit olarak açıklarsak cihazdaki devreden geçen voltaj değerlerinin 0 volt = sıfır, 5 volt = bir değerine karşılık geldiği , sıfır ve bir değerlerinin de true ya da false değerlerini yani doğru ya da yanlış değerlerini döndürdüğüdür. O zaman programlamanın sorgu yani bir mantık barındırdığını söyleyebiliriz ve bu yüzden programlama öğrenmek için önemli olan yol aslında neyi nasıl yapacağınız değil neyi ne şekilde yapacağınızdır.
-Uzattıysam kusuruma bakmayın elimden geldiğince size aslında programlamanın zor bir olay olmadığını ve sadece kod yazmayı öğrenmek ile gerçekleşmeyeceğini açıkmaya çalışıyorum. Yoksa if else while gibi konuları anlatan bir çok kaynak bulunmakta. Şimdi gelelim konularımıza...
+Hayatta sorgulamadığımız bir düşünce, var olsa dahi bize ait olabilir mi ? Şimdi ne alaka hayat, sorgulama, programlama vs. Hemen izah edeyim bir program yazmak için programlama dillerini kullanırız. Programlama dilleri bizim anlayabileceğimiz insan diline daha yakın sadece içerisinde kurallar barındıran bir araç. Peki bilgisayarlar bizi ne şekilde anlıyorlar ? Biz ekrana “HELLO WORLD !!” yazdırmak istediğimizde aslında bilgisayarın daha da genel manada makinelerin anlayabileceği dil bu mudur ? [Bu konuya ilk dersimizde](http://nuricilengir.me/java-tutorial-lesson-1-what-is-java-write-once-run-anywhere) değinmiştik şimdi yeniden bir değerlendirelim. Biz yazdığımız programı çalıştırmak istediğimizde javada bu program ortak bir ara dile çevirilir (Javanın bir kere yaz heryerde çalıştır felsefesi.) Bu ortak dil yazdığımız programlama dilinden uzak makinanın anlayabileceği dile yakındır. Bilgisayarlar peki bu ortak dili nasıl sorgularlar ? Gelmek istediğim nokta bir bilgisayar ya da makinenin aslında programlama denetimi yaparkenki mantıkla neredeyse eşdeğer bir şekilde çalıştığıdır. Basit olarak açıklarsak cihazdaki devreden geçen voltaj değerlerinin 0 volt = sıfır, 5 volt = bir değerine karşılık geldiği , sıfır ve bir değerlerinin de true ya da false değerlerini yani doğru ya da yanlış değerlerini döndürdüğüdür. O zaman programlamanın sorgu yani bir mantık barındırdığını söyleyebiliriz ve bu yüzden programlama öğrenmek için önemli olan yol aslında neyi ne kullanarak yapacağınız değil neyi ne şekilde yapacağınızdır.
+
+Uzattıysam kusuruma bakmayın elimden geldiğince size aslında programlamanın zor bir olay olmadığını ve sadece kod yazmayı öğrenmek ile gerçekleşmeyeceğini açıkmaya çalışıyorum. Yoksa if else while gibi konuları anlatan bir çok kaynak bulunmakta. Şimdi gelelim konularımıza…
 
 
 ### Koşul İfadeleri
