@@ -7,6 +7,7 @@ post: css
 pre.highlight { background: #333333 }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #8f5902; font-style: italic } /* Comment */
+.highlight .err { color: #000000} /* Error */
 .highlight .g { color: #000000 } /* Generic */
 .highlight .k { color: #204a87; font-weight: bold } /* Keyword */
 .highlight .l { color: #000000 } /* Literal */
