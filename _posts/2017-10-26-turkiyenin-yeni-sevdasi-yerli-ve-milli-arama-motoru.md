@@ -1,7 +1,7 @@
 ---
 title: 'Türkiye''nin Yeni Sevdası : YERLİ VE MİLLİ ARAMA MOTORU'
 summary: Geliiyoo Gidiyoo derken Yaani
-image: item_Yaani.jpg
+image: Yaani.jpg
 permalink: turkiyenin-yeni-sevdasi-yerli-ve-milli-arama-motoru
 date: '2017-10-26 21:14'
 categories: k3
